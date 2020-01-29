@@ -1,0 +1,13 @@
+body {
+  padding: 0 3%;
+  background: tomato; }
+
+#android-logo {
+  width: 7.5%; }
+
+#navbarTogglerDemo03 {
+  flex-direction: row;
+  justify-content: flex-end; }
+
+.mt-lg-0 {
+  margin-right: 0 !important; }
