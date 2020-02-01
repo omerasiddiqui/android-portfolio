@@ -1,3 +1,7 @@
+main {
+    border-radius: 10px;
+}
+
 .main-container {
     display: flex;
     justify-content: flex-start;
@@ -12,6 +16,8 @@
     margin-top: 5%;
     text-shadow: 1px 1px 1px white;
     font-weight: bold;
+    border-bottom: 2px solid white;
+    padding-bottom: 4px;
 }
 
 .body-text {
@@ -22,6 +28,7 @@
 
 .android {
     color: $primary-color;
+    font-size: 1.2rem;
 }
 
 .main-item {
@@ -34,6 +41,9 @@
 .work-container {
     background: lightgrey;
     padding: 0 5%;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
 
 .work-item {
@@ -49,12 +59,17 @@
     flex-direction: column;
     justify-content: space-between;
     height: 400px;
+    background: white;
 }
 
 .work-item-header {
-    font-size: 3.5rem;
+    font-size: 3.75rem;
     font-weight: bold;
-    text-shadow: 1px 1px 1px white;
+    margin-top: 10px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #3dc328;
+    font-family: "Roboto Slab", serif;
+    text-shadow: 1px 1px 1px #3dc328;
 }
 
 .work-item-text {
@@ -73,7 +88,8 @@
     border: 1px solid black;
     padding: 1% 1%;
     font-size: 1.1rem;
-    width: 33%;
+    margin-top: 15px;
+    width: 50%;
     text-align: center;
     &:hover {
         text-decoration: none;

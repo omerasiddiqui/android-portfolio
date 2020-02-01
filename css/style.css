@@ -207,6 +207,9 @@ nav {
 .navbar-light .navbar-nav .nav-link:hover {
   color: grey; }
 
+main {
+  border-radius: 10px; }
+
 .main-container {
   display: flex;
   justify-content: flex-start;
@@ -219,7 +222,9 @@ nav {
   font-size: 5rem;
   margin-top: 5%;
   text-shadow: 1px 1px 1px white;
-  font-weight: bold; }
+  font-weight: bold;
+  border-bottom: 2px solid white;
+  padding-bottom: 4px; }
 
 .body-text {
   font-size: 1.3rem;
@@ -227,14 +232,18 @@ nav {
   width: 70%; }
 
 .android {
-  color: #3dc328; }
+  color: #3dc328;
+  font-size: 1.2rem; }
 
 .main-item {
   padding: 1% 0; }
 
 .work-container {
   background: lightgrey;
-  padding: 0 5%; }
+  padding: 0 5%;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px; }
 
 .work-item {
   display: flex;
@@ -247,12 +256,17 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 400px; }
+  height: 400px;
+  background: white; }
 
 .work-item-header {
-  font-size: 3.5rem;
+  font-size: 3.75rem;
   font-weight: bold;
-  text-shadow: 1px 1px 1px white; }
+  margin-top: 10px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #3dc328;
+  font-family: "Roboto Slab", serif;
+  text-shadow: 1px 1px 1px #3dc328; }
 
 .work-item-text {
   letter-spacing: 1px;
@@ -268,7 +282,8 @@ nav {
   border: 1px solid black;
   padding: 1% 1%;
   font-size: 1.1rem;
-  width: 33%;
+  margin-top: 15px;
+  width: 50%;
   text-align: center; }
   .view-source:hover {
     text-decoration: none;
