@@ -6,10 +6,11 @@ nav {
     font-size: 1.2rem;    
     border: 5px solid lightgrey;
     border-bottom: none;
+    border-right: none;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: $primary-color;
+    color: $green;
     font-size: 1.1rem;
 }
 
