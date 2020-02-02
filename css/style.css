@@ -192,10 +192,13 @@ a {
   width: 7.5%; }
 
 nav {
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  border: 5px solid lightgrey;
+  border-bottom: none; }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #3dc328; }
+  color: #3dc328;
+  font-size: 1.1rem; }
 
 #navbarTogglerDemo03 {
   flex-direction: row;
@@ -216,7 +219,10 @@ main {
   align-items: flex-start;
   flex-direction: column;
   background: lightgrey;
-  padding: 5%; }
+  padding: 5%;
+  border: 5px solid #3dc328;
+  border-bottom: none;
+  border-top: none; }
 
 .header-text {
   font-size: 5rem;
@@ -243,7 +249,10 @@ main {
   padding: 0 5%;
   border-radius: 10px;
   border-top-left-radius: 0px;
-  border-top-right-radius: 0px; }
+  border-top-right-radius: 0px;
+  border: 5px solid white;
+  border-top: none;
+  border-bottom: none; }
 
 .work-item {
   display: flex;
@@ -257,7 +266,8 @@ main {
   flex-direction: column;
   justify-content: space-between;
   height: 400px;
-  background: white; }
+  background: white;
+  padding: 3% 5%; }
 
 .work-item-header {
   font-size: 3.75rem;
@@ -275,7 +285,9 @@ main {
 .work-item-details {
   display: flex;
   flex-direction: column;
-  height: 250px; }
+  height: 250px;
+  width: 75%;
+  padding-top: 5%; }
 
 .view-source {
   color: #3dc328;

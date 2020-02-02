@@ -9,6 +9,9 @@ main {
     flex-direction: column;
     background: lightgrey;
     padding: 5%;
+    border: 5px solid $primary-color;
+    border-bottom: none;
+    border-top: none;
 }
 
 .header-text {
@@ -44,6 +47,9 @@ main {
     border-radius: 10px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
+    border: 5px solid white;
+    border-top: none;
+    border-bottom: none;
 }
 
 .work-item {
@@ -60,6 +66,7 @@ main {
     justify-content: space-between;
     height: 400px;
     background: white;
+    padding: 3% 5%;
 }
 
 .work-item-header {
@@ -81,6 +88,8 @@ main {
     display: flex;
     flex-direction: column;
     height: 250px;
+    width: 75%;
+    padding-top: 5%;
 }
 
 .view-source {

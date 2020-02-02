@@ -4,16 +4,27 @@ const gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     print = require('gulp-print').default();
 
-// Compile Sass
-gulp.task('sass', function (done) {
-    gulp.src('sass/**/*.scss')
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./css/'))
-        .pipe(browserSync.reload({
-            stream: true
-        }))
-    done();
-});
+    function style() {
+        return gulp.src('./sass/**/*.scss')
+            .pipe(sass().on('error', sass.logError))
+            .pipe(gulp.dest('./css/'))
+            .pipe(browserSync.stream());
+    }
+
+    function watch() {
+        browserSync.init({
+            server: {
+                baseDir: './'
+            }
+        })
+        gulp.watch('./sass/**/*.scss', style);
+        gulp.watch('/*.html').on('change', browserSync.reload);
+        gulp.watch('./js/**/*/.js').on('change', browserSync.reload);
+    }
+
+
+    exports.style = style;
+    exports.watch = watch;
 
 // Optimize Images
 gulp.task('imagemin', function () {
@@ -22,21 +33,3 @@ gulp.task('imagemin', function () {
         .pipe(gulp.dest('assets/images'))
 });
 
-// sync the browser
-gulp.task('browserSync', function () {
-    browserSync.init({
-        server: {
-            injectChanges: true,
-            baseDir: './'
-        },
-    })
-});
-
-// Watch Task
-gulp.task('watch', gulp.series(['sass', 'browserSync'], function () {
-    gulp.watch("./*/sass/**/*.scss", ['sass']).on('change', browserSync.reload);
-    gulp.watch('js/**/*.js', browserSync.reload);
-    gulp.watch('./*.html', browserSync.reload);
-
-
-}));
