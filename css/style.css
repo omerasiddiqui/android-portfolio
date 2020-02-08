@@ -243,16 +243,18 @@ main {
 .main-item {
   padding: 1% 0; }
 
-#contact-btn {
+.contact-btn1 {
   margin-top: 3%;
   font-size: 1.1rem;
   border: 3px solid #3dc328;
-  padding: 1% 3%;
+  padding: 15px 30px;
   color: black;
   background: white;
   transition: 0.3s ease; }
-  #contact-btn:hover {
-    transform: scale(1.1); }
+  .contact-btn1:hover {
+    background: black;
+    color: white;
+    border-color: lightgrey; }
 
 .work-container {
   background: black;
